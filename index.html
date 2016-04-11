@@ -1,4 +1,4 @@
-<html lang="en" >
+<html lang="en">
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <!-- Angular Material style sheet -->
@@ -33,99 +33,118 @@
 
 
 
-<div class="ul" flex="20"></div>
+<div class="ul" flex="20"  hide-xs></div>
 
 <div layout="row">
-  <span flex="20"></span>
+  <span flex="20" hide-xs></span>
   <div class="cardcontainer" flex layout="column" layout-align="center">
     <div style="height:70px;"></div>
+
+
+
+
+
+
+
+    <div class="card" flex ng-repeat="item in putData">
+      <md-card>
+        <div layout="row">
+          <div class="loremtext md-padding" flex="30">
+              <div class="cardtitle">{{item.fields.name}}</div>
+              <hr>
+                <div class="description">
+                  {{item.fields.description}}
+                  
+                  <div class="cost">Rs {{item.fields.cost}}</div>
+                </div>
+          </div>
+          <div class="md-padding" flex>
+            <img ng-src="http://http://iitm5.cloudapp.net/media/{{item.fields.pic}}">
+          </div>
+        </div>
+      </md-card>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
     <div class="card" flex>
       <md-card>
         <div layout="row">
           <div class="loremtext md-padding" flex="30">
-              <div style="font-size:26px">Coffee Panna Cotta</div>
+              <div class="cardtitle">Panna Cotta</div>
               <hr>
-              
                 <div class="description">
                   I love the deliciousness of certain words-the way something as ordinary as chocolate can take on an entire new personality when dressed up with adjectives like warm, rich, thick, gooey, chilled, creamy, or frothy. 
                   
                   <div class="cost">Rs 200</div>
                 </div>
-                
-              
-              
           </div>
           <div class="md-padding" flex>
-            <img src="http://goo.gl/xhSgQu">
+            <img src="http://ow.ly/10uHWz">
           </div>
         </div>
       </md-card>
     </div>
 
-    <div class="card">
-      <md-card >
+
+
+    <div class="card" flex>
+      <md-card>
         <div layout="row">
-          <div class="loremtext md-padding"  flex="30">
-            Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet
+          <div class="loremtext md-padding" flex="30">
+              <div class="cardtitle">Juicy Burger!</div>
+              <hr>
+                <div class="description">
+                  I love the deliciousness of certain words-the way something as ordinary as chocolate can take on an entire new personality when dressed up with adjectives like warm, rich, thick, gooey, chilled, creamy, or frothy. 
+                  
+                  <div class="cost">Rs 200</div>
+                </div>
           </div>
           <div class="md-padding" flex>
-            <img src="https://source.unsplash.com/800x600/?nature,water">
+            <img src="http://ow.ly/10uGHK">
           </div>
         </div>
       </md-card>
     </div>
 
-    <div class="card">
-      <md-card >
+
+    <div class="card" flex>
+      <md-card>
         <div layout="row">
-          <div class="loremtext md-padding"  flex="30">
-            Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet
+          <div class="loremtext md-padding" flex="30">
+              <div class="cardtitle">Chicken Roll</div>
+              <hr>
+                <div class="description" layout="column">
+                  I love the deliciousness of certain words-the way something as ordinary as chocolate can take on an entire new personality when dressed up with adjectives like warm, rich, thick, gooey, chilled, creamy, or frothy. 
+                  
+                  <!--div class="cost">Rs 200</div-->
+                  <span flex></span>
+                  <md-button class="costbtn">Rs 200</md-button>
+                </div>
           </div>
           <div class="md-padding" flex>
-            <img src="https://source.unsplash.com/800x600/?food,water">
+            <img src="http://ow.ly/10uH6c">
           </div>
         </div>
       </md-card>
     </div>
 
-    <div class="card">
-      <md-card >
-        <div layout="row">
-          <div class="loremtext md-padding"  flex="30">
-            Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet
-          </div>
-          <div class="md-padding" flex>
-            <img src="https://source.unsplash.com/800x600/?food,nature">
-          </div>
-        </div>
-      </md-card>
-    </div>
 
-    <div class="card">
-      <md-card >
-        <div layout="row">
-          <div class="loremtext md-padding"  flex="30">
-            Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet
-          </div>
-          <div class="md-padding" flex>
-            <img src="https://source.unsplash.com/800x600/?water,nature">
-          </div>
-        </div>
-      </md-card>
-    </div>
 
-    <div class="card">
-      <md-card >
-        <div layout="row">
-          <div class="loremtext md-padding"  flex="30">
-            Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet
-          </div>
-          <div class="md-padding" flex>
-            <img src="https://source.unsplash.com/800x600/?nature,buildings">
-          </div>
-        </div>
-      </md-card>
-    </div>
+
+
+
+
+    
+
   </div>
 </div>
     <!--div class="card">
